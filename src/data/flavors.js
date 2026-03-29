@@ -37,7 +37,7 @@ const flavors = [
     price: "$5.99",
     description: "Chocolate ice cream mixed with marshmallows and almonds.",
     duration: "6 weeks",
-    image: "images/chocolate.jpg"
+    image: "/images/chocolate.jpg"
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const flavors = [
     price: "$5.49",
     description: "Bold coffee ice cream made for espresso lovers.",
     duration: "8 weeks",
-    image: "images/vanilla.jpg"
+    image: "/images/vanilla.jpg"
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const flavors = [
     price: "$5.79",
     description: "Buttery caramel ribbons swirled through creamy vanilla ice cream.",
     duration: "6 weeks",
-    image: "images/vanilla.jpg"
+    image: "/images/vanilla.jpg"
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const flavors = [
     price: "$5.49",
     description: "Vanilla ice cream loaded with chocolate cookie pieces.",
     duration: "8 weeks",
-    image: "images/chocolate.jpg"
+    image: "/images/chocolate.jpg"
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const flavors = [
     price: "$5.29",
     description: "Tropical mango sorbet with a tangy and sweet finish.",
     duration: "6 weeks",
-    image: "images/strawberry.jpg"
+    image: "/images/strawberry.jpg"
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ const flavors = [
     price: "$5.99",
     description: "Creamy pistachio ice cream with roasted nut pieces.",
     duration: "8 weeks",
-    image: "images/mint.jpg"
+    image: "/images/mint.jpg"
   }
 ];
 
