@@ -88,3 +88,60 @@ img {
   text-align: center;
   margin: 0 auto;
 }
+
+.content {
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+
+}
+
+.order-list {
+  background: #fff8ee;
+  padding: 15px;
+  border: 2px solid #e4b48c;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+input {
+  background-color: #fff8ee;
+  border: 1 px solid #e4b48c;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 220px;
+
+}
+
+.status-success {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.status-error {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px
+}
+
+form {
+  text-align: center;
+  margin-bottom: 220px;
+
+
+}
+
+.status-message {
+  text-align: center;
+  margin: 10px auto 0 auto;
+  width: fit-content;
+
+}
