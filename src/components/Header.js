@@ -5,7 +5,7 @@ function Header() {
   return (
     <div>
       <header>
-        <img src="images/logo.webp" alt="Sweet Scoop Logo" />
+        <img src="/images/logo.webp" alt="Sweet Scoop Logo" />
         <h1>Sweet Scoop Ice Cream Shop</h1>
       </header>
       <div className="navbar">

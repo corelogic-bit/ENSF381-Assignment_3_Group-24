@@ -41,7 +41,7 @@ function LoginForm() {
                 setMessage("Login Successful");
 
                 setTimeout(() => {
-                    window.location.href = "/flavors";
+                    navigate("/flavors");
                 }, 2000);
 
 
