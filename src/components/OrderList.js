@@ -27,8 +27,15 @@ function OrderList({ order, setOrder }) {
     }, 0);
 
     useEffect(() => {
-        localStorage.setItem("order", JSON.stringify(order));
-    }, [order]);
+    const saved = localStorage.getItem("order");
+    if (saved) {
+        setOrder(JSON.parse(saved));
+    }
+}, [setOrder]);
+
+useEffect(() => {
+    localStorage.setItem("order", JSON.stringify(order));
+}, [order]);
     
     return (
         <div className ="order-list">
