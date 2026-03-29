@@ -48,5 +48,6 @@ function FlavorCatalog({ order, setOrder }) {
             </div>
         </div>
     );
+}
             
 export default FlavorCatalog;
