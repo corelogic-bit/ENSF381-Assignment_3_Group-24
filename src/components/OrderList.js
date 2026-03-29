@@ -50,5 +50,3 @@ function OrderList({ order, setOrder }) {
 }
 
 export default OrderList;
-
-
