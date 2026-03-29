@@ -42,7 +42,9 @@ function LoginForm() {
 
                 setTimeout(() => {
                     navigate("/flavors");
-                }, 20000);
+                                
+                }, 2000);
+
 
                     
             } catch (error) {
@@ -59,7 +61,7 @@ function LoginForm() {
     
     function handleSubmit(event) {
         event.preventDefault();
-        if ((password.trim() === "") || (username.trim === "")) {
+        if ((password.trim() === "") || (username.trim() === "")) {
             setMessageType("error");
             setMessage("Error. Username and Password cannot be empty.");
             return;
