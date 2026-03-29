@@ -109,7 +109,7 @@ img {
 
 input {
   background-color: #fff8ee;
-  border: 1 px solid #e4b48c;
+  border: 1px solid #e4b48c;
   border-radius: 6px;
   padding: 6px;
 }
@@ -132,11 +132,8 @@ form {
   margin-top: 10px
 }
 
-form {
-  text-align: center;
-  margin-bottom: 220px;
-
-
+button.remove {
+  background: #c94c4c;
 }
 
 .status-message {

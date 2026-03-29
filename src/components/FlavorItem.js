@@ -10,7 +10,7 @@ function FlavorItem({ flavor, addToOrder }) {
         >
             <img src={flavor.image} alt={flavor.name} width="150" />
             <h3>{flavor.name}</h3>
-            <p>${flavor.price}</p>
+            <p>{flavor.price}</p>
             {showDesc && <p>{flavor.description}</p>}
             <button onClick={() => addToOrder(flavor)}>
                 Add to Order

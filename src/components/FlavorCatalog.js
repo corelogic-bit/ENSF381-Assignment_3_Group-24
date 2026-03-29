@@ -26,25 +26,27 @@ function FlavorCatalog({ order, setOrder }) {
         } else {
 
             const newItem = {
-                ...flavor, quantity: 1
+                ...flavor, quantity: 1, price: parseFloat(flavor.price.replace("$", ""))
             };
             const updated = [...order, newItem];
             setOrder(updated);
         }
     };
     return (
-        <div className = "flavor-grid">
-            {flavors.map((flavor) => {
-                return (
-                    <FlavorItem 
-                        key={flavor.id} 
-                        flavor={flavor} 
-                        addToOrder={addToOrder}
-                    />
-                );
-            })}
+        <div>
+            <h2>Ice Cream Flavors</h2>
+            <div className="flavor-grid">
+                {flavors.map((flavor) => {
+                    return (
+                        <FlavorItem 
+                            key={flavor.id} 
+                            flavor={flavor} 
+                            addToOrder={addToOrder}
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
-}
             
 export default FlavorCatalog;

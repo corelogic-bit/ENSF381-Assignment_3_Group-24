@@ -33,18 +33,22 @@ function OrderList({ order, setOrder }) {
     return (
         <div className ="order-list">
             <h2>Your Order</h2>
-            {order.map((item) => {
-                return (
-                    <OrderItem 
-                        key={item.id} 
-                        item={item} 
-                        removeItem={removeItem}
-                    />
-                );
-
-                
-            })}
-            <h3>Total: ${total.toFixed(2)}</h3>
+            {order.length === 0 ? (
+                <p>No items in your order.</p>
+            ) : (
+                <div>
+                    {order.map((item) => {
+                        return (
+                            <OrderItem 
+                                key={item.id} 
+                                item={item} 
+                                removeItem={removeItem}
+                            />
+                        );
+                    })}
+                    <h3>Total: ${total.toFixed(2)}</h3>
+                </div>
+            )}
         </div>
     );
 }
