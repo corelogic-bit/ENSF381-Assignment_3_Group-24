@@ -5,7 +5,7 @@ import OrderItem from "./OrderItem";
 function OrderList({ order, setOrder }) {
     const removeItem = (id) => {
         const updated = order.map((item) => {
-            if (item.id == id) {
+            if (item.id === id) {
                 return {
                     ...item, 
                     quantity: item.quantity - 1

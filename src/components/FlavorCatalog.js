@@ -1,17 +1,17 @@
-import { useState} from "react";
+import React from "react";
 import flavors from "../data/flavors";
 import FlavorItem from "./FlavorItem";
 
 function FlavorCatalog({ order, setOrder }) {
     const addToOrder = (flavor) => {
         const exists = order.find((item) => {
-            return item.id ==flavor.id;
+            return item.id === flavor.id;
         });
 
         if (exists) {
             const updated = order.map((item) => {
   
-                if (item.id == flavor.id) {
+                if (item.id === flavor.id) {
                     return {
                         ...item, quantity: item.quantity + 1
                     };
