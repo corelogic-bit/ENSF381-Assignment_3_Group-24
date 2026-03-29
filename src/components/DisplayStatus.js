@@ -3,7 +3,7 @@ function DisplayStatus({ type, message }) {
     if (type === "success") {
         className += " status-success";
     } else {
-        className += "  status-error";
+        className += " status-error";
 
     }
     
