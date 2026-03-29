@@ -1,9 +1,9 @@
 function DisplayStatus({ type, message }) {
     let className = "status-message";
     if (type === "success") {
-        className += "status-success";
+        className += " status-success";
     } else {
-        className += "status-error";
+        className += " status-error";
     }
     
     
