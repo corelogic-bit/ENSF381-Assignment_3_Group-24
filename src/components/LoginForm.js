@@ -104,7 +104,7 @@ function LoginForm() {
 
                 <button type="submit">Login</button>
                 <br/>
-                <a href="/">Forgot Password?</a>
+                <a href="#" onClick={(e) => e.preventDefault()}>Forgot Password?</a>
             </form>
 
             {message && <DisplayStatus type={messageType} message={message} />}
